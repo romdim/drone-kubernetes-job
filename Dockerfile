@@ -1,4 +1,4 @@
-FROM alpine:3.4
+FROM alpine:3.6
 MAINTAINER Andrey Subbotin "andrey@subbotin.me"
 
 RUN apk --no-cache add bash jq
@@ -13,6 +13,3 @@ RUN mkdir -p /srv
 COPY run.sh /srv/
 ENTRYPOINT ["/bin/bash"]
 CMD ["/srv/run.sh"]
-
-
-
